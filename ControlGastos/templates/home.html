@@ -61,13 +61,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- /.control-sidebar -->
 
 {% include "footer.html" %}
+{% block javascript %}
+  
+{% endblock %}
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+
 <!-- jQuery UI 1.11.4 -->
 
 <script src="{% static 'plugins/jquery-ui/jquery-ui.min.js' %}"></script>
