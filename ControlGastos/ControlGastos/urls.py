@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from XpenCntrl import views as xpencntrl_views
 from . import views as local_views
+from login.views import LoginFormView
 
 
 urlpatterns = [
     path('', local_views.inicio, name='inicio'),
     path('admin/', admin.site.urls),
+    path('login/', LoginFormView.as_view()),
     url(r'app/', include('XpenCntrl.urls', namespace='XpenCntrl')),
 ]
