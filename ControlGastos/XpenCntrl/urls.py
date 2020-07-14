@@ -6,7 +6,8 @@ app_name = 'XpenCntrl'
 
 urlpatterns = [
 
-    path("app/", local_views.xpencntrl_index, name="xpencontrl_index"),
+    path("", local_views.xpencntrl_index, name="xpencontrl_index"),
+    path("category/list/", local_views.CategoryListView.as_view(), name="category_list"),
 
 
 ]
